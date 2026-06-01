@@ -35,6 +35,12 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .link-list img.icon-modrinth { filter: invert(1) sepia(1) saturate(3) hue-rotate(90deg); }
 
 .next { margin-top: 40px; }
+.next-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
 .next-card {
     display: block;
     text-decoration: none;
@@ -42,7 +48,6 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
     border: 1px solid #27272a;
     border-left: 4px solid #71717a;
     padding: 20px;
-    margin-top: 15px;
     border-radius: 8px;
     position: relative;
     overflow: hidden;

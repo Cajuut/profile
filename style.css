@@ -34,4 +34,60 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .link-list img:not(.icon-modrinth) { filter: brightness(0) invert(1); }
 .link-list img.icon-modrinth { filter: invert(1) sepia(1) saturate(3) hue-rotate(90deg); }
 
+.next { margin-top: 40px; }
+.next-card {
+    display: block;
+    text-decoration: none;
+    background: #09090b;
+    border: 1px solid #27272a;
+    border-left: 4px solid #71717a;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.next-card:hover {
+    background: #111;
+    border-color: #444;
+}
+.next-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+.next-label {
+    color: #fff;
+    background: #333;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+}
+.next-status {
+    color: #52525b;
+    letter-spacing: 1px;
+}
+.next-title {
+    color: #fff;
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.next-desc {
+    color: #71717a;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.next-glitch {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+    margin-top: 15px;
+    animation: glitchBar 4s ease-in-out infinite;
+}
+@keyframes glitchBar {
+    0%, 90%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
 footer { margin-top: 80px; font-size: 0.8rem; color: #52525b; text-align: center; }

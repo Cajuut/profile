@@ -1,0 +1,211 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #050505;
+    color: #a1a1aa;
+    font-family: "Courier New", "MS Gothic", monospace;
+    line-height: 1.8;
+    padding: 40px 20px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.scanlines {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,0.15),
+        rgba(0,0,0,0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+}
+
+.noise {
+    position: fixed;
+    top: -50%; left: -50%; right: -50%; bottom: -50%;
+    background: transparent url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJnoiPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjY1IiBudW1PY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjA0Ii8+PC9zdmc+');
+    animation: noise 0.5s steps(10) infinite;
+    pointer-events: none;
+    z-index: 9;
+    opacity: 0.4;
+}
+
+@keyframes noise {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -5%); }
+    20% { transform: translate(-10%, 5%); }
+    30% { transform: translate(5%, -10%); }
+    40% { transform: translate(-5%, 15%); }
+    50% { transform: translate(-10%, 5%); }
+    60% { transform: translate(15%, 0); }
+    70% { transform: translate(0, 10%); }
+    80% { transform: translate(-15%, 0); }
+    90% { transform: translate(10%, 5%); }
+    100% { transform: translate(5%, 0); }
+}
+
+main { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+
+header {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #52525b;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #71717a;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #fff;
+    border-bottom: 1px solid #27272a;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.announcements { margin-top: 10px; }
+
+.announce-card {
+    background: rgba(9, 9, 11, 0.8);
+    border: 1px solid #27272a;
+    border-left: 3px solid #444;
+    padding: 20px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.announce-card:nth-child(2) { border-left-color: #71717a; }
+.announce-card:nth-child(3) { border-left-color: #71717a; }
+.announce-card:nth-child(4) { border-left-color: #71717a; }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+}
+
+.tag {
+    color: #fff;
+    background: #333;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+}
+
+.date {
+    color: #52525b;
+    letter-spacing: 1px;
+}
+
+.announce-text {
+    font-size: 0.85rem;
+    color: #a1a1aa;
+    line-height: 2;
+}
+
+.crash {
+    color: #fff;
+    background: #000;
+    padding: 1px 4px;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.glitch-bar {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+    margin-top: 15px;
+    animation: glitchBar 4s ease-in-out infinite;
+}
+
+@keyframes glitchBar {
+    0%, 90%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+.specs { margin-top: 10px; }
+
+.spec-grid {
+    display: grid;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.spec-item {
+    display: flex;
+    gap: 20px;
+    padding: 12px 15px;
+    background: rgba(9, 9, 11, 0.8);
+    border: 1px solid #27272a;
+}
+
+.spec-label {
+    color: #52525b;
+    font-size: 0.75rem;
+    min-width: 80px;
+    letter-spacing: 1px;
+}
+
+.spec-value {
+    color: #d4d4d8;
+    font-size: 0.85rem;
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #52525b;
+    letter-spacing: 3px;
+}
+
+.announce-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, transparent 95%, rgba(255,255,255,0.02) 100%);
+    pointer-events: none;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.95; }
+}
+
+.timestamp {
+    animation: flicker 5s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.2rem; }
+    .spec-item { flex-direction: column; gap: 5px; }
+}

@@ -30,5 +30,8 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .link-discord { border-left: 4px solid #5865f2; color: #5865f2 !important; }
 .link-list a:hover { background: #1a1a1a; }
 .link-list i { margin-right: 15px; font-size: 1.4rem; width: 25px; text-align: center; }
+.link-list img { margin-right: 15px; width: 22px; height: 22px; }
+.link-list img:not(.icon-modrinth) { filter: brightness(0) invert(1); }
+.link-list img.icon-modrinth { filter: invert(1) sepia(1) saturate(3) hue-rotate(90deg); }
 
 footer { margin-top: 80px; font-size: 0.8rem; color: #52525b; text-align: center; }

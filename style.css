@@ -95,6 +95,12 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
     50% { opacity: 0.8; }
 }
 
+.tools-grid { display: grid; gap: 15px; margin-top: 15px; }
+.tool-card { background: #09090b; padding: 20px; border: 1px solid #27272a; border-radius: 12px; }
+.tool-card h3 { color: #fff; margin: 0 0 12px 0; font-size: 1rem; font-weight: normal; }
+.tool-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-list span { background: #111; padding: 6px 12px; border-radius: 6px; border: 1px solid #333; font-size: 0.8rem; color: #a1a1aa; }
+
 .contact-list { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
 .contact-list a { text-decoration: none; padding: 15px; background: #111; border: 1px solid #333; border-radius: 8px; display: flex; align-items: center; transition: 0.3s; font-weight: bold; }
 .contact-list a:hover { background: #1a1a1a; }

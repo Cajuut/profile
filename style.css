@@ -95,4 +95,10 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
     50% { opacity: 0.8; }
 }
 
+.contact-list { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.contact-list a { text-decoration: none; padding: 15px; background: #111; border: 1px solid #333; border-radius: 8px; display: flex; align-items: center; transition: 0.3s; font-weight: bold; }
+.contact-list a:hover { background: #1a1a1a; }
+.contact-list i { margin-right: 15px; font-size: 1.4rem; width: 25px; text-align: center; }
+.contact-discord { border-left: 4px solid #5865f2; color: #5865f2 !important; }
+
 footer { margin-top: 80px; font-size: 0.8rem; color: #52525b; text-align: center; }

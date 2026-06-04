@@ -111,7 +111,8 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .freelance { margin-top: 40px; }
 .freelance-card { background: #09090b; padding: 20px; border: 1px solid #27272a; border-radius: 12px; margin-top: 15px; }
 .freelance-desc { font-size: 0.85rem; color: #a1a1aa; line-height: 1.8; margin-bottom: 15px; }
-.freelance-link { display: inline-block; text-decoration: none; padding: 10px 20px; background: #111; border: 1px solid #333; border-radius: 8px; color: #f39c12 !important; font-weight: bold; transition: 0.3s; }
+.freelance-link { text-decoration: none; padding: 15px; background: #111; border: 1px solid #333; border-radius: 8px; display: flex; align-items: center; transition: 0.3s; font-weight: bold; border-left: 4px solid #f39c12; color: #f39c12 !important; }
 .freelance-link:hover { background: #1a1a1a; }
+.freelance-link i { margin-right: 15px; font-size: 1.4rem; width: 25px; text-align: center; }
 
 footer { margin-top: 80px; font-size: 0.8rem; color: #52525b; text-align: center; }

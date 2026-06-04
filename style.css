@@ -28,6 +28,7 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .link-github { border-left: 4px solid #fff; color: #fff !important; }
 .link-modrinth { border-left: 4px solid #1bd96a; color: #1bd96a !important; }
 .link-discord { border-left: 4px solid #5865f2; color: #5865f2 !important; }
+.link-freelance { border-left: 4px solid #f39c12; color: #f39c12 !important; }
 .link-list a:hover { background: #1a1a1a; }
 .link-list i { margin-right: 15px; font-size: 1.4rem; width: 25px; text-align: center; }
 .link-list img { margin-right: 15px; width: 22px; height: 22px; }
@@ -106,5 +107,11 @@ h2 { color: #fff; border-bottom: 2px solid #27272a; padding-bottom: 10px; margin
 .contact-list a:hover { background: #1a1a1a; }
 .contact-list i { margin-right: 15px; font-size: 1.4rem; width: 25px; text-align: center; }
 .contact-discord { border-left: 4px solid #5865f2; color: #5865f2 !important; }
+
+.freelance { margin-top: 40px; }
+.freelance-card { background: #09090b; padding: 20px; border: 1px solid #27272a; border-radius: 12px; margin-top: 15px; }
+.freelance-desc { font-size: 0.85rem; color: #a1a1aa; line-height: 1.8; margin-bottom: 15px; }
+.freelance-link { display: inline-block; text-decoration: none; padding: 10px 20px; background: #111; border: 1px solid #333; border-radius: 8px; color: #f39c12 !important; font-weight: bold; transition: 0.3s; }
+.freelance-link:hover { background: #1a1a1a; }
 
 footer { margin-top: 80px; font-size: 0.8rem; color: #52525b; text-align: center; }
